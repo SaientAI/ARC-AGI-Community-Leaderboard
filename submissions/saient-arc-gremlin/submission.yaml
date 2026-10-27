@@ -4,17 +4,17 @@ authors:
     affiliation: "Saient"
     github: "https://github.com/SaientAI"
 description: >
-  Open Python symbolic ARC-AGI-1 solver combining bounded geometric and object
-  hypotheses with a deterministic three-view evaluation: original, rotated,
-  and palette-normalized grids. Hypotheses are selected by training-example
-  fit and inverse-transformed for test predictions. Optional relational
-  scene-graph and restricted program-synthesis prototypes are published
-  separately in the same repository but are not included in the scored result.
-code_url: "https://github.com/SaientAI/saient-arc"
+  Open Python symbolic ARC-AGI-1 solver selecting bounded geometric, object,
+  and task-parameterized hypotheses by training-example fit across original,
+  rotated, and palette-normalized views. Version 0.2 removes fixed puzzle
+  recipes and whole-example lookup following community review. The scored
+  method and catalog audit are public; optional spatial program-search
+  prototypes are excluded from the reported result.
+code_url: "https://github.com/SaientAI/saient-arc/tree/9bd797ab533f97f3054a9bf60342669934d4317a"
 versions:
-  - version: "0.1"
-    date: 2026-10-25
-    changes: "Initial standalone open-source ARC-AGI-1 research submission."
+  - version: "0.2"
+    date: 2026-10-27
+    changes: "Remove fixed puzzle recipes and whole-example lookup; audit parameter inference; rerun all 400 public evaluation tasks."
     models:
       - name: "Saient ARC Gremlin (symbolic, no pretrained weights)"
     scores:
